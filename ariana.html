@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ariana la ratoncita 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container" id="hearts"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Para Ariana</h1>
+            <p class="subtitle">Eres una persona totalmente increíble</p>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <section class="letter-section">
+        <div class="letter-container reveal">
+            <h2>Mi Carta para Ti</h2>
+            <div class="letter-text">
+                <p>Ariana,</p>
+                <p>Quiero decirte solo una cosa, aunque sabes que me suelo extender bastante</p>
+                <p>Eres una persona increíble y muy bonita, no hablo únicamente de tu apariencia física solamente</p>
+                <p>Porque para hablar de ello tenemos rato. Solo quiero que sepas que para mi, eres una niña muy linda y agradable que siempre sabe sacarme risas, eres dulce y amable, charlar contigo es sinónimo de un buen rato.</p>
+                <p>Que sepas que, eres realmente preciosa, de pies a cabeza, una dama espléndida que resalta como el brillo del diamante, una luz tan pura y agradable de mirar.</p>
+                <p>Gracias por existir, por ser quien eres, por permitirme estar en tu vida.</p>
+                <p class="signature">Con todo el cariño del mundo, un jugador de lolete </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons-section">
+        <h2 class="reveal">Eres muy agradable y...</h2>
+        <div class="reasons-grid">
+            <div class="reason-card reveal">
+                <span class="icon">✨</span>
+                <h3>Eres muy amable y servicial</h3>
+                <p>Siempre buscas la manera de ayudar en lo que puedas, y si no sabes aprendes.</p>
+            </div>
+            <div class="reason-card reveal">
+                <span class="icon">💕</span>
+                <h3>Eres de buen corazón</h3>
+                <p>Tienes un corazón muy grande, aunque digas que sea de pollito</p>
+            </div>
+            <div class="reason-card reveal">
+                <span class="icon">😂</span>
+                <h3>Tienes un buen humor</h3>
+                <p>Sabes como alegrar un momento y siempre las cosas terminan en risas, tu humor es muy agradable.</p>
+            </div>
+            <div class="reason-card reveal">
+                <span class="icon">🌟</span>
+                <h3>Tu forma de ser</h3>
+                <p>Cuando estás en un sitio se siente, eres como esa presencia que se hace notar, una presencia tan dulce</p>
+            </div>
+            <div class="reason-card reveal">
+                <span class="icon">🦋</span>
+                <h3>Tan disciplinada</h3>
+                <p>Me atrevo a decir con seguridad que eres muy dedicada a lo que haces, y aparte, lo haces con esmero, te esfuerzas en cada cosa que te gusta y eso es de admirar.</p>
+            </div>
+            <div class="reason-card reveal">
+                <span class="icon">💎</span>
+                <h3>Tu belleza</h3>
+                <p>Eres radiante, bonita, linda, como quieras llamarlo, pero es un aspecto que destaca mucho de ti.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="body-love-section">
+        <h2 class="reveal">Eres especial tal y como eres</h2>
+        <p class="message reveal">
+            Quiero que entiendas algo importante, tú tienes una historia, tu tienes una razón, eres espléndida así como eres, así como eres te mereces todo lo bueno.
+        </p>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="reveal">Ola tu</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="arilapro1.jpg" alt="Ariana" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;background:linear-gradient(135deg,#e8a0bf,#d4a574);display:flex;align-items:center;justify-content:center;font-size:3rem;\'>📸</div>'">
+                <div class="overlay"><p>Tu carita lo dice todo</p></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="arilapro2.jpg" alt="Ariana" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;background:linear-gradient(135deg,#d4739d,#e8a0bf);display:flex;align-items:center;justify-content:center;font-size:3rem;\'>📸</div>'">
+                <div class="overlay"><p>Siempre radiante</p></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="arilapro3.jpg" alt="Ariana" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;background:linear-gradient(135deg,#d4a574,#fef5f0);display:flex;align-items:center;justify-content:center;font-size:3rem;\'>📸</div>'">
+                <div class="overlay"><p>La niña bonita</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-section">
+        <div class="final-content">
+            <h2>Te quiero mucho, ratoncita arilapro777</h2>
+            <p>Eres una persona muy linda y la verdad no me arrepiento de haberte conocido, me alegro de que hoy en día estés en mi vida</p>
+            <button class="love-btn" onclick="createConfetti()">Dale click acá vaina</button>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Ariana">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
