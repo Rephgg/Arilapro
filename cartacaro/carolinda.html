@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Carolinda 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-c.css">
+</head>
+<body>
+    <div class="sparkles-container" id="sparkles"></div>
+
+    <div class="page-wrapper">
+        <div class="header">
+            <h1>Para Carolinda</h1>
+            <p>Algo especial para alguien muy especial</p>
+        </div>
+
+        <div class="card-area">
+            <div class="sticker sticker-osito" onclick="openLightbox(this)">
+                <img src="osito.jpg" alt="Osito" onerror="this.parentElement.style.display='none'">
+            </div>
+            <div class="sticker sticker-gatito" onclick="openLightbox(this)">
+                <img src="gatito.jpg" alt="Gatito" onerror="this.parentElement.style.display='none'">
+            </div>
+            <div class="sticker sticker-gatito2" onclick="openLightbox(this)">
+                <img src="gatito2.jpg" alt="Gatito2" onerror="this.parentElement.style.display='none'">
+            </div>
+            <div class="sticker sticker-gatito3" onclick="openLightbox(this)">
+                <img src="gatito3.gif" alt="Gatito3" onerror="this.parentElement.style.display='none'">
+            </div>
+
+            <div class="letter">
+                <span class="washi washi-1"></span>
+                <span class="washi washi-2"></span>
+                <span class="washi washi-3"></span>
+                <span class="washi washi-4"></span>
+                <span class="stamp">💌</span>
+                <h2>Mi carta para ti</h2>
+                <p>Niña bonita de ojos dulces, me gustan tus ojos aunque me van a gustar más si me miran, una princesa tan linda y espléndida, que destaca por su alegría y sutileza, muy elegante y atractiva.</p>
+                <p>Me encanta tu lunar cerca de tu ojo, te da un toque tan único que me fascina, la foto que me mandaste hoy me dejó tan encantado que no he podido sacar ese retrato de mi cabeza.</p>
+                <p>Te adoro mucho y todos los días haré hasta lo imposible para alegrarte, intentaré hacer tus días mejores porque tu ya haces mejores los míos ❤️</p>
+                <p class="signature">Con cariño, siempre 💕</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Preview">
+    </div>
+
+    <script src="script-c.js"></script>
+</body>
+</html>
