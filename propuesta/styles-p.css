@@ -46,6 +46,10 @@ body{font-family:'Quicksand',sans-serif;background:linear-gradient(160deg,var(--
 .shot:nth-child(6){animation-delay:.75s}
 .shot:nth-child(7){animation-delay:.9s}
 .shot:nth-child(8){animation-delay:1.05s}
+.shot:nth-child(9){animation-delay:1.2s}
+.shot:nth-child(10){animation-delay:1.35s}
+.shot:nth-child(11){animation-delay:1.5s}
+.shot:nth-child(12){animation-delay:1.65s}
 @keyframes popIn{0%{opacity:0;transform:scale(.6)}100%{opacity:1;transform:scale(1)}}
 .shot img{width:100%;height:auto;display:block}
 .confetti{position:fixed;top:-15px;font-size:1.4rem;z-index:1000;pointer-events:none;animation:confettiFall linear forwards}
