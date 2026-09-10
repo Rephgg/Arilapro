@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Alejandro para Carolina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <main class="container">
+        <div class="content">
+            <h1 class="title">De Alejandro para Carolina</h1>
+
+            <div class="divider"></div>
+
+            <p class="subtitle">Hay cosas que se sienten y no se pueden explicar... solo se pueden escuchar.</p>
+
+            <div class="player" id="player">
+                <button class="play-btn" id="playBtn" aria-label="Reproducir">
+                    <svg id="iconPlay" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg id="iconPause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+
+                <div class="progress-area" id="progressArea">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <span class="time" id="currentTime">0:00</span>
+            </div>
+
+            <audio id="audio" src="audio.mp3" preload="metadata"></audio>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
