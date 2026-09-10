@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Carolina 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-p.css">
+</head>
+<body>
+    <div class="float-container" id="floaters"></div>
+
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+    <audio id="musicPlayer" src="carita.mp3" loop></audio>
+
+    <div class="envelope-scene" id="envelopeScene">
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="envelope-body"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+            <div class="letter-card" id="letterCard">
+                <h2>Para ti 💌</h2>
+                <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:#96707f;text-align:center;">Toca el sobre para abrirlo</p>
+            </div>
+            <div class="envelope-seal">💖</div>
+            <div class="envelope-hint">Toca el sobre para abrirlo 🎀</div>
+        </div>
+    </div>
+
+    <div class="letter-content" id="letterContent">
+        <h2>Mi carta para ti</h2>
+        <p>Querida niña linda, recuerdo mucho el día que te vi por primera vez, recuerdo mucho como dije "que nena tan linda hay en Its, dios mío". La verdad siempre que había un evento o algo era buscándote, pendiente de si estabas, si hablabas, que hacías, vivía atento a lo que hacías mientras podía.</p>
+        <p>Aunque tú dudes o no lo creas, me cumples tantos gustos, tantas cosas que tienes me gustan, empezando por tu nacionalidad, siguiendo por tu forma de ser, continuando con tu propia personalidad y tu ser, créeme que tantas cosas de ti me gustan, tu alegría, tu voz, tu forma de expresarte, tu forma de ver las cosas, tu forma de contar las cosas, tu, Carolina, tu me gustas mucho.</p>
+        <p>Y agregándole tu figura, dios mío, tu cuerpo es angelicalmente bello y hermoso, cada centímetro de tu piel me gusta tanto, de pies a cabeza, tu forma de pensar, tu inteligencia, que seas tan inteligente y dedicada a lo tuyo me gusta de una forma que no te imaginas.</p>
+        <p>Me encanta pasar tiempo contigo, hablar sobre tu día, que me cuentes tus cosas, escucharte y estar juntos, ver anime, hablar sobre cualquier cosa, jugar, poco a poco te has vuelto una persona muy especial para mi.</p>
+        <p>Te adoro de una forma incondicional, a partir de ahora tus mascotas tienen 2 dueños, y si algún día te vas siempre te llevaré dentro. Te quiero demasiado, te adoro mucho mi Carolina, alegras mis días y me das una razón para mejorar, para ser mejor persona, para ser mejor yo, y mejor para ti, porque vales demasiado, eres lo que siempre quise en una mujer, hermosa, atenta, amorosa, inteligente, celosa, responsable, dedicada, amable, social, eres todo lo que siempre soñé, me encanta cuando me consientes hablándome lindo, cada mensaje tuyo llena mi alma, mi corazón, mi ser.</p>
+        <p>Ya hablé con Trino y me dijo que podía tener tu mano, así que oficialmente quiero decirte que,</p>
+        <div class="question">¿Quieres ser mi novia? <3</div>
+        <div class="buttons">
+            <button class="btn btn-yes" onclick="sayYes()">Sí, obvio 💖</button>
+            <button class="btn btn-no" id="noBtn" onclick="sayNo()">No</button>
+        </div>
+    </div>
+
+    <div class="celebration" id="celebration">
+        <h2>¡Lo sabía! 💖</h2>
+        <p class="sub">Gracias por decir que sí, mi Carolina. Te quiero muchísimo</p>
+        <div class="screenshots">
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c1.png" alt="Captura 1">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c2.png" alt="Captura 2">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c3.png" alt="Captura 3">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c4.png" alt="Captura 4">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c5.png" alt="Captura 5">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c6.png" alt="Captura 6">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c7.png" alt="Captura 7">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c8.png" alt="Captura 8">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c9.png" alt="Captura 9">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c10.png" alt="Captura 10">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c11.png" alt="Captura 11">
+            </div>
+            <div class="shot" onclick="openLightbox(this)">
+                <img src="c12.png" alt="Captura 12">
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Captura">
+    </div>
+
+    <script src="script-p.js"></script>
+</body>
+</html>

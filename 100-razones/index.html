@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor Carolina ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- PANTALLA DE INICIO -->
+    <section class="splash">
+        <div class="splash-bg"></div>
+        <div class="splash-content">
+            <div class="splash-photo">
+                <img src="fotos/ari1.jpg" alt="Carolina">
+            </div>
+            <h1 class="splash-title">Carolina</h1>
+            <p class="splash-sub">mi Ariana hermosa</p>
+            <div class="splash-divider">
+                <span class="divider-heart">❤</span>
+            </div>
+            <p class="splash-text">Quise escribirte 100 razones por las que te amo</p>
+            <button class="splash-btn" onclick="scrollToLetter()">Empezar a leer ❤️</button>
+        </div>
+        <div class="splash-scroll">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter" id="letterSection">
+        <div class="letter-wrapper">
+            <div class="letter-paper">
+                <p class="letter-para">Mi amor,</p>
+                <p class="letter-para">Quise hacer algo especial para ti, algo que refleje todo lo que siento cada día cuando estoy contigo.</p>
+                <p class="letter-para">No soy muy bueno con las palabras, pero aquí van 100 razones por las que me enamoré de ti, por las que cada día me vuelvo a enamorar.</p>
+                <p class="letter-para">Algunas son grandes, otras pequeñas, pero todas son 100% sinceras y salen de lo más profundo de mi corazón.</p>
+                <p class="letter-para">Gracias por ser quien eres, por existir, y por permitirme ser parte de tu vida.</p>
+                <p class="letter-sign">Con todo mi amor, para ti ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="countdown">
+        <div class="countdown-inner">
+            <span class="countdown-num" id="counter">0</span>
+            <p class="countdown-label">razones por las que te amo</p>
+        </div>
+    </section>
+
+    <!-- FOTO GRANDE -->
+    <section class="big-photo">
+        <div class="big-photo-frame">
+            <img src="fotos/ari13.jpg" alt="Carolina">
+        </div>
+        <p class="big-photo-cap">La mujer más hermosa que he conocido</p>
+    </section>
+
+    <!-- RAZONES 1-10 -->
+    <section class="reasons" id="r1">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Tu Belleza</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">1</span>Eres hermosa</div>
+            <div class="rcard"><span class="rn">2</span>Tienes unos ojitos hermosos</div>
+            <div class="rcard"><span class="rn">3</span>Tienes una carita hermosa</div>
+            <div class="rcard"><span class="rn">4</span>Tienes unas mejillas preciosas</div>
+            <div class="rcard"><span class="rn">5</span>Tu piel es lindísima</div>
+            <div class="rcard"><span class="rn">6</span>Tienes un color de ojos fascinante</div>
+            <div class="rcard"><span class="rn">7</span>La forma de tus ojos me encanta</div>
+            <div class="rcard"><span class="rn">8</span>Tu cabello liso me enamora</div>
+            <div class="rcard"><span class="rn">9</span>Tu cabello largo me encanta (y si está corto también)</div>
+            <div class="rcard"><span class="rn">10</span>Tus dulces labios hermosos</div>
+        </div>
+    </section>
+
+    <!-- FOTO 1 -->
+    <section class="photo-row">
+        <div class="photo-polaroid">
+            <img src="fotos/ari3.jpg" alt="Carolina">
+            <p>Siempre radiante ✨</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="fotos/ari4.jpg" alt="Carolina">
+            <p>Tu carita hermosa 💕</p>
+        </div>
+    </section>
+
+    <!-- RAZONES 11-20 -->
+    <section class="reasons" id="r2">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Tu Cuerpo</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">11</span>Tus brazos me encantan</div>
+            <div class="rcard"><span class="rn">12</span>Tus manos son muy tiernas</div>
+            <div class="rcard"><span class="rn">13</span>Tu cuerpo es una obra de arte</div>
+            <div class="rcard"><span class="rn">14</span>Tu silueta es hermosa</div>
+            <div class="rcard"><span class="rn">15</span>Tienes el cuerpo de una Diosa</div>
+            <div class="rcard"><span class="rn">16</span>Tu abdomen es encantador</div>
+            <div class="rcard"><span class="rn">17</span>Tu cintura es hermosa</div>
+            <div class="rcard"><span class="rn">18</span>Tu escote es de ensueño</div>
+            <div class="rcard"><span class="rn">19</span>Tu cadera es increíblemente preciosa</div>
+            <div class="rcard"><span class="rn">20</span>Tus piernas son fascinantes</div>
+        </div>
+    </section>
+
+    <!-- RAZONES 21-30 -->
+    <section class="reasons" id="r3">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Detalles Que Me Enamoran</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">21</span>Cada centímetro de tu piel es como ver un paisaje hermoso</div>
+            <div class="rcard"><span class="rn">22</span>Tus muslos son muy lindos</div>
+            <div class="rcard"><span class="rn">23</span>La forma de tu cuerpo es divina</div>
+            <div class="rcard"><span class="rn">24</span>Tu forma de vestir me encanta, tienes buen gusto de la moda</div>
+            <div class="rcard"><span class="rn">25</span>La forma en la que te expresas</div>
+            <div class="rcard"><span class="rn">26</span>Tu voz me encanta</div>
+            <div class="rcard"><span class="rn">27</span>Tienes una voz hermosa</div>
+            <div class="rcard"><span class="rn">28</span>Me encanta escuchar tu fina voz</div>
+            <div class="rcard"><span class="rn">29</span>Tu nombre Carolina</div>
+            <div class="rcard"><span class="rn">30</span>Tu nombre Andrea</div>
+        </div>
+    </section>
+
+    <!-- FOTO 2 -->
+    <section class="photo-row">
+        <div class="photo-polaroid">
+            <img src="fotos/ari5.jpg" alt="Carolina">
+            <p>La niña bonita 💕</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="fotos/ari6.jpg" alt="Carolina">
+            <p>Siempre con esa sonrisa 😊</p>
+        </div>
+    </section>
+
+    <!-- RAZONES 31-40 -->
+    <section class="reasons" id="r4">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Tu Personalidad</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">31</span>Tu apodo Ariana</div>
+            <div class="rcard"><span class="rn">32</span>Eres muy inteligente</div>
+            <div class="rcard"><span class="rn">33</span>Tienes una actitud hermosa</div>
+            <div class="rcard"><span class="rn">34</span>Tratas muy bonito los animales</div>
+            <div class="rcard"><span class="rn">35</span>Quieres mucho a tus mascotas</div>
+            <div class="rcard"><span class="rn">36</span>Eres muy ordenada</div>
+            <div class="rcard"><span class="rn">37</span>Eres muy amable</div>
+            <div class="rcard"><span class="rn">38</span>Tu carácter me encanta</div>
+            <div class="rcard"><span class="rn">39</span>Que seas social</div>
+            <div class="rcard"><span class="rn">40</span>Que seas polifacética</div>
+        </div>
+    </section>
+
+    <!-- RAZONES 41-50 -->
+    <section class="reasons" id="r5">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Cómo Me Tratas</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">41</span>Me hablas bonito</div>
+            <div class="rcard"><span class="rn">42</span>Me tratas con mucho cariño</div>
+            <div class="rcard"><span class="rn">43</span>Cuando me hablas me siento consentido</div>
+            <div class="rcard"><span class="rn">44</span>Cuando me mimas me siento en las nubes</div>
+            <div class="rcard"><span class="rn">45</span>Cuando me hablas bonito me siento en un sueño</div>
+            <div class="rcard"><span class="rn">46</span>Cuando me dedicas tus lindas palabras</div>
+            <div class="rcard"><span class="rn">47</span>Que me escuches hablar de mis cosas, me encanta</div>
+            <div class="rcard"><span class="rn">48</span>Cuando me cuentas cosas de tu vida</div>
+            <div class="rcard"><span class="rn">49</span>Cuando te preocupas por mi</div>
+            <div class="rcard"><span class="rn">50</span>Cuando me cuidas</div>
+        </div>
+    </section>
+
+    <!-- FOTO 3 -->
+    <section class="photo-row">
+        <div class="photo-polaroid">
+            <img src="fotos/ari7.jpg" alt="Carolina">
+            <p>Mi persona favorita 💖</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="fotos/ari8.jpg" alt="Carolina">
+            <p>Esa mirada que me enamora 🥰</p>
+        </div>
+    </section>
+
+    <!-- RAZONES 51-60 -->
+    <section class="reasons" id="r6">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Nuestros Momentos</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">51</span>Cuando pasas tiempo conmigo</div>
+            <div class="rcard"><span class="rn">52</span>Cuando vemos anime</div>
+            <div class="rcard"><span class="rn">53</span>Cuando te molestas porque te hago bromas</div>
+            <div class="rcard"><span class="rn">54</span>Cuando te ríes de mis bromas</div>
+            <div class="rcard"><span class="rn">55</span>Cuando me haces bromas</div>
+            <div class="rcard"><span class="rn">56</span>Cuando me celas</div>
+            <div class="rcard"><span class="rn">57</span>Cuando eres posesiva</div>
+            <div class="rcard"><span class="rn">58</span>Cuando te enojas por celos</div>
+            <div class="rcard"><span class="rn">59</span>Jugar contigo me da mucha alegría</div>
+            <div class="rcard"><span class="rn">60</span>Hablar sobre tu día me encanta</div>
+        </div>
+    </section>
+
+    <!-- RAZONES 61-70 -->
+    <section class="reasons" id="r7">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Cosas Que Haces</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">61</span>Escucharte sobre todo lo que me cuentas</div>
+            <div class="rcard"><span class="rn">62</span>Cuando me hablas de tu carrera</div>
+            <div class="rcard"><span class="rn">63</span>Cuando me mandas fotos de ti</div>
+            <div class="rcard"><span class="rn">64</span>Cuando me mandas fotos de tu outfit</div>
+            <div class="rcard"><span class="rn">65</span>Cuando me mandas fotos de tu día</div>
+            <div class="rcard"><span class="rn">66</span>Cuando me mandas fotos de tus mascotas (amo tu gata malmirada)</div>
+            <div class="rcard"><span class="rn">67</span>Ver tiktok contigo es super entretenido (siempre quise hacerlo)</div>
+            <div class="rcard"><span class="rn">68</span>Que seas fan de Duki</div>
+            <div class="rcard"><span class="rn">69</span>Que te guste cocinar</div>
+            <div class="rcard"><span class="rn">70</span>Que seas tan limpia</div>
+        </div>
+    </section>
+
+    <!-- MASCOTAS -->
+    <section class="photo-row photo-row-4">
+        <div class="photo-polaroid">
+            <img src="decor/gatita.jpg" alt="Tu gatita">
+            <p>Tu gatita 🐱</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="decor/gatito.jpg" alt="Gatito">
+            <p>Gatito</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="decor/gatito2.jpg" alt="Gatito">
+            <p>Otro gatito</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="decor/osito.jpg" alt="Osito">
+            <p>Tu osito 🧸</p>
+        </div>
+    </section>
+
+    <!-- RAZONES 71-80 -->
+    <section class="reasons" id="r8">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Tu Dedicación</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">71</span>Que seas tan buena en lo que haces</div>
+            <div class="rcard"><span class="rn">72</span>Eres muy dedicada y eso es fantástico</div>
+            <div class="rcard"><span class="rn">73</span>Siempre ganas (ers muy pro mi amor)</div>
+            <div class="rcard"><span class="rn">74</span>Eres muy juiciosa, eso me enamora</div>
+            <div class="rcard"><span class="rn">75</span>No te rindes fácil</div>
+            <div class="rcard"><span class="rn">76</span>Puedes ver las cosas de diferente forma</div>
+            <div class="rcard"><span class="rn">77</span>Escribes de una forma muy formal y técnica</div>
+            <div class="rcard"><span class="rn">78</span>Eres muy letrada</div>
+            <div class="rcard"><span class="rn">79</span>Siempre quieres que todo salga bien</div>
+            <div class="rcard"><span class="rn">80</span>Y te esfuerzas porque todo salga bien</div>
+        </div>
+    </section>
+
+    <!-- FOTO 4 -->
+    <section class="photo-row">
+        <div class="photo-polaroid">
+            <img src="fotos/ari9.jpg" alt="Carolina">
+            <p>Cada foto tuya es una obra de arte 📸</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="fotos/ari10.jpg" alt="Carolina">
+            <p>No puedes no ser hermosa 💗</p>
+        </div>
+    </section>
+
+    <!-- RAZONES 81-90 -->
+    <section class="reasons" id="r9">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Tus Emociones</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">81</span>Cuando estás feliz</div>
+            <div class="rcard"><span class="rn">82</span>Cuando estás de humor</div>
+            <div class="rcard"><span class="rn">83</span>Cuando estás triste</div>
+            <div class="rcard"><span class="rn">84</span>Cuando estás de mal humor</div>
+            <div class="rcard"><span class="rn">85</span>Cuando estás muy tierna</div>
+            <div class="rcard"><span class="rn">86</span>Cuando estás consentida</div>
+            <div class="rcard"><span class="rn">87</span>Cuando estás caliente</div>
+            <div class="rcard"><span class="rn">88</span>Que me hagas preguntas trampa</div>
+            <div class="rcard"><span class="rn">89</span>Que me digas lo que sientes</div>
+            <div class="rcard"><span class="rn">90</span>Cuando me dices que me quieres, me adoras y me amas</div>
+        </div>
+    </section>
+
+    <!-- RAZONES 91-100 -->
+    <section class="reasons" id="r10">
+        <div class="reasons-head">
+            <span class="head-line"></span>
+            <h2>Lo Más Especial</h2>
+            <span class="head-line"></span>
+        </div>
+        <div class="reasons-list">
+            <div class="rcard"><span class="rn">91</span>Cuando dices que soy tu novio</div>
+            <div class="rcard"><span class="rn">92</span>Que siempre encuentras una forma de hacer las cosas</div>
+            <div class="rcard"><span class="rn">93</span>Tus gustos musicales me encantan</div>
+            <div class="rcard"><span class="rn">94</span>Que me escribas siempre que puedas</div>
+            <div class="rcard"><span class="rn">95</span>La prioridad que me das</div>
+            <div class="rcard"><span class="rn">96</span>Que tengas tantos peluches</div>
+            <div class="rcard"><span class="rn">97</span>Que quieras tanto a tus peluches</div>
+            <div class="rcard"><span class="rn">98</span>Que hables de mi con tus amigas me gusta mucho</div>
+            <div class="rcard"><span class="rn">99</span>Todo lo que haces por mi, me encanta</div>
+            <div class="rcard"><span class="rn">100</span>La forma en la que resolvemos siempre las diferencias</div>
+        </div>
+    </section>
+
+    <!-- FOTO 5 -->
+    <section class="photo-row">
+        <div class="photo-polaroid">
+            <img src="fotos/ari11.jpg" alt="Carolina">
+            <p>Te veo increíble 🔥</p>
+        </div>
+        <div class="photo-polaroid">
+            <img src="fotos/ari12.jpg" alt="Carolina">
+            <p>Así te amo yo 💕</p>
+        </div>
+    </section>
+
+    <!-- GALERÍA GRANDE -->
+    <section class="gallery">
+        <h2 class="gallery-title">Todas Tus Fotos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari2.jpg" alt="Carolina"><p>Hermosa</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari14.jpg" alt="Carolina"><p>Increíble</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari15.jpg" alt="Carolina"><p>Radiante</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari16.jpg" alt="Carolina"><p>Perfecta</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari17.jpg" alt="Carolina"><p>Bellísima</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari18.jpg" alt="Carolina"><p>Divina</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari19.jpg" alt="Carolina"><p>Soñadora</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/ari20.jpg" alt="Carolina"><p>La más linda</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/arilapro1.jpg" alt="Carolina"><p>Siempre radiante</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/arilapro2.jpg" alt="Carolina"><p>Tu carita</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="fotos/arilapro3.jpg" alt="Carolina"><p>La niña bonita</p></div>
+            
+        </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final">
+        <div class="final-content">
+            <p class="final-top">❤️ ❤️ ❤️ ❤️ ❤️</p>
+            <h2>Por si nunca te habían dicho 100 razones, aquí las tienes mi amor</h2>
+            <p>Cada una de estas razones sale de lo más profundo de mi corazón. Eres lo mejor que me ha pasado en la vida, Carolina Andrea. Gracias por existir y por ser MI persona favorita.</p>
+            <p class="final-love">TE AMO</p>
+            <button class="final-btn" onclick="createConfetti()">Dale click aquí mi amor 💖</button>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lb-close">&times;</span>
+        <img id="lb-img" src="" alt="Carolina">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
